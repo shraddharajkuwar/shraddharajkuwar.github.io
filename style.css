@@ -1,6 +1,7 @@
 body{
     font-family: 'Rubik', sans-serif;
     background-color: #fdfdfd;
+    scroll-behavior: smooth;
 }
 p,h1,h2,h3,h4,h5,h6,a,span{
     font-family: 'Rubik', sans-serif;
@@ -20,6 +21,20 @@ p, span{
     background-color: #de0f66 !important;
     border: 1px solid #de0f66 !important;
     padding: 10px 25px;
+    min-width: 150px;
+}
+.btn-secondary{
+    padding: 10px 25px;
+    background-color: transparent;
+    border: 1px solid #de0f66 !important;
+    color: #de0f66;
+    min-width: 150px;
+
+}
+.btn-secondary:hover{
+    background-color: #de0f66 !important;
+    border: 1px solid #de0f66 !important;
+    color: #fff;
 }
 
 .img-circle{
@@ -38,7 +53,7 @@ p, span{
 .navbar .nav-link{
     font-size: 18px;
 }
- .navbar-nav .nav-link:hover{
+ .navbar-nav .nav-link:hover,  .navbar-nav .nav-link.active{
     color: #de0f66 !important;
 }
 .banner-container{
@@ -75,7 +90,18 @@ p, span{
     position: relative;
     color: #fff;
 }
- .nav-link.active::after{
+.intro-img::after{
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top:0px;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #de0f66;
+    left: -30px;
+}
+ .MyWork .nav-link.active::after{
     content: '';
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
@@ -145,6 +171,7 @@ p, span{
 .carousel-indicators .active {
     background-color: #de0f66;
 }
+
 .hero-img .square{
     position: absolute;
     z-index: -1;
@@ -168,7 +195,7 @@ p, span{
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 .ContentSection{
-    margin: 120px 0px;
+    padding: 90px 0px;
 }
 @media (max-width: 767px){
     .banner-container {
@@ -178,12 +205,12 @@ p, span{
         font-size: 1.8rem;
         margin-bottom: 15px !important;
     }
-    .btn-primary{
+    .btn-primary, .btn-secondary{
         padding: 10px 15px;
         font-size: 17px;
     }
     .ContentSection{
-        margin: 30px 0px;
+        padding: 30px 0px;
     }
 }
 .fixed-top{
@@ -248,4 +275,7 @@ p, span{
 }
 .object-fit-position{
     object-position: 0px 4%;
+}
+#mywork{
+      scroll-behavior: smooth;
 }

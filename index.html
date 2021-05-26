@@ -16,51 +16,50 @@
 </head>
 <body>
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar_top">
+		<nav class="navbar navbar-expand-lg navbar-light" id="navbar_top">
 			<a class="navbar-brand" href="#">Navbar</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="navbar-nav ml-auto">
-					<a class="nav-item nav-link active" href="#home">Home </a>
-					<a class="nav-item nav-link" href="#About">About</a>
-					<a class="nav-item nav-link" href="#Skills">Skills</a>
-					<a class="nav-item nav-link" href="#Exprience">Exprience</a>
-					<a class="nav-item nav-link" href="#Work">Work</a>
-					<a class="nav-item nav-link" href="#Services">Services</a>
+					<a class="nav-item nav-link active" href="index.html">Home </a>
+					<a class="nav-item nav-link" href="about.html">About</a>					
+					<a class="nav-item nav-link" href="exprience.html">Exprience</a>					
 					<a class="nav-item nav-link" href="mailto:rajkuwarshraddha03@gmail.com">Contact</a>
 				</div>
 			</div>
 		</nav>
 	</header>
-	<div data-spy="scroll" data-target="#navbar_top" data-offset="0" class="container">
-	
+	<div class="container">	
 			<section id="home">			
 				<div class="row">
 					<div class="col-sm-6 d-flex align-items-center justify-content-center">
 						<div>
 							<h1 class="mb-4 hero-head">I'm <span class="text-primary hero-head">Shraddha Rajkuwar</span></h1>
-							<h1 class="mb-4 hero-head">
+							<h1>I enjoy creating user-centric, delightful, and human experiences. </h1>
+							<!-- <h1 class="mb-4 hero-head">
 								<a href="" class="typewrite text-dark" data-period="2000" data-type='[ "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
 									<span class="wrap"></span>
 								</a>
-							</h1>
+							</h1> -->
 							<h3 class="mb-4 hero-fancy-text hero-head"></h3>
-							<a href="#" class="btn btn-primary my-3">Download CV</a>
+							<a href="Resume Shraddha Rajkuwar.pdf" class="btn btn-primary my-3" download>Download CV</a>
+							<a href="#mywork" class="btn btn-secondary my-3 ml-3">My Work</a>
+							
 						</div>
 					</div>
-					<div class="col-sm-6 hero-img">
-						<!-- <div class="square">
+					<div class="col-sm-6 hero-img mt-4">
+						 <!-- <div class="square">
 							<img src="./img/dotted.png" height="200px" width="200px" />
-						</div> -->
+						</div>  -->
 						<div class="text-center " >
-							<img src="./img/hero-img.png" class="object-fit-contain" height="500px" width="100%" />
+							<img src="./img/hero-img.png" class="object-fit-cover intro-img object-fit-position" height="500px" width="100%" />
 						</div>
 					</div>
 				</div>			
 		</section>
-		<section class="MyWork ContentSection">
+		<section class="MyWork ContentSection" id="mywork">
 			<div>
 				<h3 class="text-primary mb-3">My Work</h3>
 				<div>
@@ -326,6 +325,6 @@
 		});
 	}); 
 	
-</script>
+</script> 
 </body>
 </html>
