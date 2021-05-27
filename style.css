@@ -197,6 +197,12 @@ p, span{
 .ContentSection{
     padding: 90px 0px;
 }
+.intro-img{
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+    object-position: 0px 4%;
+}
 @media (max-width: 767px){
     .banner-container {
         top: 165px;
@@ -205,12 +211,30 @@ p, span{
         font-size: 1.8rem;
         margin-bottom: 15px !important;
     }
+    .hero-sub-text{
+        font-size: 1.5rem;
+    }
     .btn-primary, .btn-secondary{
         padding: 10px 15px;
         font-size: 17px;
     }
     .ContentSection{
         padding: 30px 0px;
+    }
+    .MyExprience{
+        padding-bottom: 30px;
+    }
+    .intro-img{
+        object-fit: contain;
+        height: 300px;
+        width: 100%;
+        object-position: unset;
+    }
+    .nav-tabs .nav-link{
+        padding: 5px 10px;
+    }
+    .hero-content{
+        padding-top: 30px;
     }
 }
 .fixed-top{
@@ -255,6 +279,9 @@ p, span{
 .work-img{
     height: 450px;     
 }
+.MyExprience {
+    padding-bottom: 90px;
+}
 .stretched-link::after {
     position: absolute;
     top: 0;
@@ -278,4 +305,17 @@ p, span{
 }
 #mywork{
       scroll-behavior: smooth;
+}
+footer{
+    padding: 30px 0px;
+}
+.social-media-link{
+    font-size: 30px;
+   
+}
+.social-media-link i{
+    margin: 15px 0px;
+}
+.social-media-link:hover{
+    color: #de0f66;
 }
