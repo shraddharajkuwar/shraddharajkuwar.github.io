@@ -291,7 +291,7 @@ p, span{
 .card-wrapper:nth-child(2) .work-card, .card-wrapper:nth-child(6) .work-card, .bg-card2{
     background-color: #f4eff7;  
 }
-.card-wrapper:nth-child(3) .work-card, .card-wrapper:nth-child(7) .work-card{
+.card-wrapper:nth-child(3) .work-card, .card-wrapper:nth-child(7) .work-card, .bg-card3{
     background-color: #fbede8;  
 }
 .card-wrapper:nth-child(4) .work-card, .card-wrapper:nth-child(8) .work-card{
@@ -343,3 +343,4 @@ footer{
 .social-media-link:hover{
     color: #de0f66;
 }
+
