@@ -8,9 +8,9 @@ p,h1,h2,h3,h4,h5,h6,a,span{
     font-family: 'Rubik', sans-serif;
     color: #404040;    
 }
-p, span{
+p, span, a{
     font-weight: 400;
-    font-size: 17px;
+    font-size: 16px;
 }
 .bg-primary{
     background-color: #de0f66 !important;
@@ -52,7 +52,7 @@ p, span{
     color: #de0f66;
 }
 .navbar .nav-link{
-    font-size: 18px;
+    font-size: 16px;
 }
  .navbar-nav .nav-link:hover,  .navbar-nav .nav-link.active{
     color: #de0f66 !important;
