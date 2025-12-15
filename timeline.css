@@ -11,7 +11,7 @@
         content: "";
         position: absolute;
         top: 0;
-        left: 50%;
+        left: 21%;
         margin-left: -1px;
         border-right: 2px dashed #c4d2e2;
         height: 100%;
@@ -19,21 +19,20 @@
     }
     
     .timeline-row {
-        padding-left: 50%;
+        padding-left: 21%;
         position: relative;
         margin-bottom: 30px;
     }
     
     .timeline-row .timeline-time {
         position: absolute;
-        right: 50%;
-        top: 20px;
+        right: 80%;
+        top: 13px;
         text-align: right;
         margin-right: 20px;
         color: #404040;
         font-size: 15px;
-        background: #e8e8e8;
-        /* color: #fff; */
+        background: #e8e8e8;       
         border-radius: 15px;
         padding: 5px 15px;
     }
@@ -63,7 +62,7 @@
     .timeline-row .timeline-content:before {
         content: "";
         position: absolute;
-        top: 20px;
+        top: 22px;
         right: -50px;
         width: 15px;
         height: 15px;
@@ -109,26 +108,26 @@
         margin-bottom: 10px;
     }
     
-    .timeline-row:nth-child(even) .timeline-content {
+    .timeline-row .timeline-content {
         background-color: #fff;
         border: 1px solid #e8e8e8;
         margin-left: 40px;
         text-align: left;
     }
     
-    .timeline-row:nth-child(even) .timeline-content:after {
+    .timeline-row .timeline-content:after {
         left: -39px;
         border-right: 18px solid #e8e8e8;
         border-top: 10px solid transparent;
         border-bottom: 10px solid transparent;
     }
     
-    .timeline-row:nth-child(even) .timeline-content:before {
-        left: -50px;
+    .timeline-row .timeline-content:before {
+        left: -54px;
         right: initial;
     }
     
-    .timeline-row:nth-child(odd) {
+    /* .timeline-row:nth-child(odd) {
         padding-left: 0;
         padding-right: 50%;
     }
@@ -154,7 +153,7 @@
         border-left: 18px solid #e8e8e8;
         border-top: 10px solid transparent;
         border-bottom: 10px solid transparent;
-    }
+    } */
     
     @media (max-width: 767px) {
         .timeline {
