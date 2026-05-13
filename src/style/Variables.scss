@@ -1,0 +1,50 @@
+// Color variables
+$primary-color: #e5e2dc;
+$text-dark: #14181f;
+$bg-body: #f7f7f7;
+$text-primary: #cb5e2f;
+$body-MutedFontColor: #4b423e;
+
+// Font
+$font-primary: 'Inter', sans-serif;
+$font-title: "Playfair Display", serif;
+
+// Spacing
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 32px;
+$section-top-margin: 30px;
+
+// Border radius
+$radius-sm: 4px;
+$radius-md: 8px;
+
+
+@mixin section-heading {
+  font-family: $font-title !important;
+  color: $text-dark;
+  font-size: 50px !important;
+  font-weight: bold !important;
+  line-height: 1.2 !important;
+  margin-bottom: 35px !important;
+}
+
+@mixin section-heading-tagline {
+  font-family: $font-primary !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 4px !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  line-height: 1.4 !important;
+  color: #6b7280 !important;
+  margin-bottom: 15px !important;
+}
+
+@mixin section-heading-responsive {
+  @include section-heading;
+
+  @media (max-width: 900px) {
+    font-size: 2rem !important;
+    margin-bottom: 15px !important;
+  }
+}

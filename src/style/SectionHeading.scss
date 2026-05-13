@@ -1,0 +1,37 @@
+.section-heading {
+    margin-bottom: 32px;
+
+    .section-tagline {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        color: $body-MutedFontColor;            
+        text-transform: uppercase !important;
+        &::after {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: $body-MutedFontColor;
+            margin-top: 10px;
+        }
+    }
+
+    .section-title {
+        @include section-heading-responsive;
+        margin-top: 10px !important;
+
+        @media (max-width: 480px) {
+            font-size: 25px !important;
+        }
+
+        .highlight {
+            color: $text-primary !important;
+            font-style: italic;
+            font-size: 55px !important;
+             @media (max-width: 480px) {
+            font-size: 25px !important;
+        }
+        }
+        
+    }
+}

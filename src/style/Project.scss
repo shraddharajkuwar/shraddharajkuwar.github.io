@@ -1,0 +1,298 @@
+.Project-detail {
+    background: #f9f9f9;
+    min-height: 100vh;
+    padding: 0px 16px;
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .back-link {
+        font-size: 14px;
+        color: $body-MutedFontColor;
+        cursor: pointer;
+        margin:0px 0px 20px 0px;
+        display: inline-flex;
+    }
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 16px;
+
+        span {
+            font-size: 12PX;
+            padding: 6px 10px;
+            background: #eee;
+            border-radius: 20px;
+            color: $body-MutedFontColor;
+        }
+    }
+
+    .title {
+        font-family: "Playfair Display", serif;
+        color: $text-dark;
+        font-size: 55px !important;
+        line-height: 1.2 !important;
+        margin: 10px 0 5px;
+
+        @media (max-width: 768px) {
+            font-size: 25px !important;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 25px !important;
+        }
+    }
+
+    .subtitle {
+        font-size: 16px;
+        color: $body-MutedFontColor;
+        margin-bottom: 30px;
+
+        @media (max-width: 480px) {
+            font-size: 14px;
+        }
+    }
+
+    .hero-image {
+        height: 360px;
+        background: #eaeaea;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+
+        .Project-hero-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        span {
+            color: $body-MutedFontColor;
+            font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+            height: 200px;
+        }
+
+        @media (max-width: 480px) {
+            height: 160px;
+            border-radius: 10px;
+        }
+    }
+
+    .info-grid {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        div {
+            flex: 1;
+        }
+
+        .label {
+            font-size: 16px;
+            color: $text-primary;
+            font-family: $font-primary;
+            margin-bottom: 5px !important;
+
+        }
+
+        span {
+            font-size: 16px;
+            color: $body-MutedFontColor;
+        }
+
+
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+            row-gap: 20px;
+
+            div {
+                flex: 1 1 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            flex-direction: column;
+
+            div {
+                width: 100%;
+            }
+        }
+    }
+
+    .section {
+        margin-bottom: 40px;
+
+        h2 {
+                     
+        }
+
+        p {
+            font-size: 16px;
+            color: $body-MutedFontColor;
+            line-height: 1.7;
+
+            @media (max-width: 480px) {
+                font-size: 13px;
+            }
+        }
+    }
+
+    .image-placeholder {
+        height: 220px;
+        background: #efefef;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            color: $body-MutedFontColor;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            height: 180px;
+        }
+
+        @media (max-width: 480px) {
+            height: 140px;
+        }
+    }
+
+    .key-results {
+
+        h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .result-card {            
+            border-radius: 12px;
+            padding: 8px 20px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            color: $body-MutedFontColor;
+            line-height: 1.6;
+            font-family: $font-primary;
+            border: 1px solid $text-primary;
+            cursor: default;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+
+            &:hover {
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);               
+            }
+        }
+
+        .divider {
+            height: 1px;
+            background: #ddd;
+            margin: 50px 0 20px;
+        }
+
+        .case-navigation {
+            display: flex;
+            justify-content: space-between;
+
+            button {
+                background: none;
+                border: none;
+                font-size: 14px;
+                color: #666;
+                cursor: pointer;
+                padding: 6px 0;
+
+                transition: all 0.2s ease;
+
+                &:hover {
+                    color: #000;
+                    transform: translateX(3px);
+                }
+
+                &:first-child:hover {
+                    transform: translateX(-3px);
+                }
+            }
+        }
+
+
+        @media (max-width: 768px) {
+            .results-grid {
+                gap: 16px;
+            }
+        }
+
+
+        @media (max-width: 480px) {
+            .results-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .result-card {
+                font-size: 13px;
+                padding: 16px;
+            }
+        }
+    }
+
+    .ProjectDetail-imgGrid {
+        .solutionImages-grid {
+            text-align: center;
+
+            .MuiGrid-root {
+                margin-bottom: 20px !important;
+                margin: auto !important;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.Feature {
+    .Feature-list-title {
+        font-family: $font-primary;
+        font-size: 16px;
+        color: $text-primary;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 10px !important;
+        margin-top: 0px !important;
+    }
+
+    .Feature-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 16px;
+
+        .List-item {
+            font-size: 12PX;
+            font-family: $font-primary;
+            padding: 6px 10px;
+            border: none !important;
+            background: #eee;
+            border-radius: 20px;
+            color: #4b423e;
+        }
+    }
+}

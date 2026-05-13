@@ -1,0 +1,52 @@
+.experience {
+  .experience_label {
+    @include section-heading-tagline;
+  }
+
+  .experience_heading {
+    @include section-heading-responsive;    
+  }
+
+  .experience_item {
+    margin-bottom: 20px;
+  }
+
+  .experience_item_card {
+    align-items: flex-start;
+  }
+
+  .experience_year {
+    color: $body-MutedFontColor;
+    font-size: 16px;
+    font-family: $font-primary;
+  }
+
+  .experience_role {
+    margin-bottom: 4px;
+    font-family: $font-primary;
+    font-size: 18px;
+    color: $text-dark;
+  }
+
+  .experience_company {
+    color: $text-primary;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+  .experience_description {
+    margin: 0;
+    padding-left: 18px;
+
+    li {
+      margin-bottom: 6px;
+      line-height: 1.6;
+      color: $body-MutedFontColor;
+      font-family: $font-primary;
+    }
+  }
+
+  .experience_divider {
+    margin: 20px 0;
+  }
+}

@@ -1,0 +1,46 @@
+.InfoCard {
+  height: 100%;
+  border-radius: 12px !important;  
+  border: 1px solid $text-primary;  
+  cursor: default;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  background-color: transparent !important;
+
+  &:hover {    
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .card-icon {
+    margin-bottom: 10px;
+
+    svg {
+      font-size: 28px;
+      color: $text-primary;
+    }
+  }
+
+  .card-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: $text-dark;
+    font-family: $font-primary;
+  }
+
+  .card-list {
+    padding-left: 18px;
+    margin: 0;
+
+    .card-item {
+      font-size: 16px;
+      color: $body-MutedFontColor;
+      font-family: $font-primary;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+  }
+}

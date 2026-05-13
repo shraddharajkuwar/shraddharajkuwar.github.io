@@ -1,0 +1,93 @@
+.case-studies {
+  padding: 0px 20px;
+  scroll-margin-top: 120px;
+  margin-bottom: 40px;  
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .case-studies-grid {
+    margin-bottom: 20px;
+  }
+
+  .section-label {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: $body-MutedFontColor;
+    margin-bottom: 10px;
+  }
+
+  .section-title {
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: $text-dark;
+  }
+
+  .card {
+    cursor: pointer;
+    border-radius: 12px;
+    border: 1px solid #cb5e2f;
+    background-color: #F5F2EE;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding: 20px 0px 20px 40px;
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+
+    &:hover {
+     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  .card-image {
+    position: relative;
+    width: 100%;
+    height: 440px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;     
+    }
+
+  }
+
+  .card-content {
+    h6 {
+      font-size: 18px;
+      color: $text-dark;
+      margin-bottom: 10px;
+      margin-top: 20px;
+      font-weight: 500 !important;
+    }
+
+    span {
+      font-size: 16px;
+      color: $body-MutedFontColor;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .tag {
+    font-size: 12px;
+    padding: 6px 12px;
+    background: #efedea;
+    border-radius: 20px;
+    color: $body-MutedFontColor;
+  }
+}
