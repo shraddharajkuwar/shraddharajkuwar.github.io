@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Box, Typography, Container } from "@mui/material";
+import { Box, Typography, Button, Container } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import CaseStudies from "../components/CaseStudies.tsx";
 import LinkButton from "../components/LinkButton.tsx";
@@ -12,18 +12,18 @@ const HeroSection: React.FC = () => {
   ];
   const caseStudiesRef = useRef<HTMLDivElement | null>(null);
   const handleScroll = () => {
-    if (caseStudiesRef.current) {
-      const yOffset = -100;
-      const y =
-        caseStudiesRef.current.getBoundingClientRect().top +
-        window.pageYOffset +
-        yOffset;
+      if (caseStudiesRef.current) {
+    const yOffset = -100; 
+    const y =
+      caseStudiesRef.current.getBoundingClientRect().top +
+      window.pageYOffset +
+      yOffset;
 
-      window.scrollTo({
-        top: y,
-        behavior: "smooth",
-      });
-    }
+    window.scrollTo({
+      top: y,
+      behavior: "smooth",
+    });
+  }
   };
   const [text, setText] = useState("");
   const [roleIndex, setRoleIndex] = useState(0);
@@ -84,10 +84,11 @@ const HeroSection: React.FC = () => {
                   I design intuitive, human-centered products that bridge the gap
                   between complexity and clarity.
                 </Typography>
-                <button onClick={handleScroll} className="Primary-linkBtn">
-                  View Work 
-                </button>
-
+                <LinkButton
+                  text="View work"
+                  onClick={handleScroll}
+                  link="#case-studies"
+                />
               </Box>
             </Grid>
             <Grid size={{ xs: 12, md: 5 }}>
