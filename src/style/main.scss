@@ -9,12 +9,12 @@ body {
 }
 
 body,p,.nav-left a, .nav-right a{
-    font-family: $font-primary !important;
-    color: $body-MutedFontColor;
+    font-family: $FontFamily-primary !important;
+    color: $Theme-muted;
 }
  .nav-right a{
     &:hover{
-        color: $text-primary;
+        color: $Theme-primary;
     }
  }
 .section-top-margin{

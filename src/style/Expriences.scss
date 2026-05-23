@@ -16,20 +16,20 @@
   }
 
   .experience_year {
-    color: $body-MutedFontColor;
+    color: $Theme-muted;
     font-size: 16px;
-    font-family: $font-primary;
+    font-family: $FontFamily-primary;
   }
 
   .experience_role {
     margin-bottom: 4px;
-    font-family: $font-primary;
+    font-family: $FontFamily-primary;
     font-size: 18px;
-    color: $text-dark;
+    color: $Theme-dark;
   }
 
   .experience_company {
-    color: $text-primary;
+    color: $Theme-primary;
     margin-bottom: 10px;
     font-weight: 500;
   }
@@ -41,8 +41,8 @@
     li {
       margin-bottom: 6px;
       line-height: 1.6;
-      color: $body-MutedFontColor;
-      font-family: $font-primary;
+      color: $Theme-muted;
+      font-family: $FontFamily-primary;
     }
   }
 

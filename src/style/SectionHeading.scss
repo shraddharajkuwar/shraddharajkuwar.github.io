@@ -4,14 +4,14 @@
     .section-tagline {
         font-size: 12px;
         letter-spacing: 1.5px;
-        color: $body-MutedFontColor;            
+        color: $Theme-muted;            
         text-transform: uppercase !important;
         &::after {
             content: "";
             display: block;
             width: 40px;
             height: 2px;
-            background: $body-MutedFontColor;
+            background: $Theme-muted;
             margin-top: 10px;
         }
     }
@@ -25,7 +25,7 @@
         }
 
         .highlight {
-            color: $text-primary !important;
+            color: $Theme-primary !important;
             font-style: italic;
             font-size: 55px !important;
              @media (max-width: 480px) {

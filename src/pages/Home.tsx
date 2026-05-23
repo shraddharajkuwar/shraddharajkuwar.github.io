@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Box, Typography, Button, Container } from "@mui/material";
+import { Box, Typography, Container } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import CaseStudies from "../components/CaseStudies.tsx";
 import LinkButton from "../components/LinkButton.tsx";
@@ -10,28 +10,32 @@ const HeroSection: React.FC = () => {
     "UI Developer",
     "Accessibility Specialist",
   ];
-  const caseStudiesRef = useRef<HTMLDivElement | null>(null);
-  const handleScroll = () => {
-      if (caseStudiesRef.current) {
-    const yOffset = -100; 
-    const y =
-      caseStudiesRef.current.getBoundingClientRect().top +
-      window.pageYOffset +
-      yOffset;
 
-    window.scrollTo({
-      top: y,
-      behavior: "smooth",
-    });
-  }
+  const caseStudiesRef = useRef<HTMLDivElement | null>(null);
+
+  const handleScroll = () => {
+    if (caseStudiesRef.current) {
+      const yOffset = -100;
+
+      const y =
+        caseStudiesRef.current.getBoundingClientRect().top +
+        window.pageYOffset +
+        yOffset;
+
+      window.scrollTo({
+        top: y,
+        behavior: "smooth",
+      });
+    }
   };
+
   const [text, setText] = useState("");
   const [roleIndex, setRoleIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
     const current = roles[roleIndex];
-    let speed = isDeleting ? 50 : 100;
+    const speed = isDeleting ? 50 : 100;
 
     const timer = setTimeout(() => {
       if (!isDeleting) {
@@ -56,19 +60,33 @@ const HeroSection: React.FC = () => {
   return (
     <Box>
       <div className="hero">
-        <Container maxWidth="lg" className="hero-container">
-          <Grid container spacing={4} alignItems="center">
-
+        <Container maxWidth="lg" disableGutters>
+          <Grid
+            container
+            spacing={4}
+            alignItems="center"
+            className="hero-container"
+          >
+            {/* LEFT CONTENT */}
             <Grid size={{ xs: 12, md: 7 }}>
               <Box className="hero-left">
-                <Typography className="hero-label">HELLO</Typography>
+                <Typography className="hero-label">
+                  HELLO
+                </Typography>
 
-                <Typography className="hero-title" component="h1">
+                <Typography
+                  className="hero-title"
+                  component="h1"
+                >
                   I’m Shraddha Rajkuwar
                 </Typography>
 
-                <Typography className="hero-subtitle" component="h2">
+                <Typography
+                  className="hero-subtitle"
+                  component="h2"
+                >
                   {text}
+
                   <Box
                     component="span"
                     sx={{
@@ -81,9 +99,9 @@ const HeroSection: React.FC = () => {
                 </Typography>
 
                 <Typography className="hero-description">
-                  I design intuitive, human-centered products that bridge the gap
-                  between complexity and clarity.
+                  I craft modern, accessible interfaces that combine thoughtful user experience with clean frontend execution.
                 </Typography>
+
                 <LinkButton
                   text="View work"
                   onClick={handleScroll}
@@ -91,22 +109,31 @@ const HeroSection: React.FC = () => {
                 />
               </Box>
             </Grid>
-            <Grid size={{ xs: 12, md: 5 }}>
-              <Box className="blob-wrapper">
-                <div className="blob"></div>
 
+            {/* RIGHT IMAGE */}
+            <Grid
+              size={{ xs: 12, md: 5 }}
+              sx={{
+                display: "flex",
+                alignItems: "flex-end",                
+              }}
+            >
+              <Box className="hero-image-wrapper">
                 <img
-                  src="/images/hero-img-new.png"
+                  src="/images/ShraddhaImg2.png"
                   alt="profile"
                   className="profile-img"
                 />
               </Box>
             </Grid>
-
           </Grid>
         </Container>
       </div>
-      <div ref={caseStudiesRef} className="case-studies-wrapper">
+
+      <div
+        ref={caseStudiesRef}
+        className="case-studies-wrapper"
+      >
         <CaseStudies />
       </div>
     </Box>

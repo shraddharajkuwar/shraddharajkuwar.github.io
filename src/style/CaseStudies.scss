@@ -15,7 +15,7 @@
   .section-label {
     font-size: 12px;
     letter-spacing: 3px;
-    color: $body-MutedFontColor;
+    color: $Theme-muted;
     margin-bottom: 10px;
   }
 
@@ -23,13 +23,13 @@
     font-family: "Playfair Display", serif;
     font-size: 36px;
     margin-bottom: 40px;
-    color: $text-dark;
+    color: $Theme-dark;
   }
 
   .card {
     cursor: pointer;
     border-radius: 12px;
-    border: 1px solid #cb5e2f;
+    border: 1px solid $Theme-primary;
     background-color: #F5F2EE;
     overflow: hidden;
     transition: transform 0.3s ease;
@@ -63,7 +63,7 @@
   .card-content {
     h6 {
       font-size: 18px;
-      color: $text-dark;
+      color: $Theme-dark;
       margin-bottom: 10px;
       margin-top: 20px;
       font-weight: 500 !important;
@@ -71,7 +71,7 @@
 
     span {
       font-size: 16px;
-      color: $body-MutedFontColor;
+      color: $Theme-muted;
       line-height: 1.6;
       margin-bottom: 15px;
     }
@@ -88,6 +88,6 @@
     padding: 6px 12px;
     background: #efedea;
     border-radius: 20px;
-    color: $body-MutedFontColor;
+    color: $Theme-muted;
   }
 }

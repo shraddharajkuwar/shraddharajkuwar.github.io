@@ -3,22 +3,22 @@
   align-items: center;
   gap: 8px;
   text-decoration: none;
-  color: $text-dark;
+  color: $Theme-dark;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: -0.2px;
   transition: all 0.3s ease;
   width: fit-content;
-  font-family: $font-primary;
-  color: $body-MutedFontColor;
+  font-family: $FontFamily-primary;
+  color: $Theme-muted;
   &:hover {
-    color: $text-primary;
+    color: $Theme-primary;
   }
 
   .arrow-icon {
     font-size: 20px !important;
     font-weight: 200 !important;
-    font-family: $font-primary;
+    font-family: $FontFamily-primary;
     transition: transform 0.3s ease;
   }
 

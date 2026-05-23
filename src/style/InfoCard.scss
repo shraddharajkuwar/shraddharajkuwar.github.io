@@ -1,7 +1,7 @@
 .InfoCard {
   height: 100%;
   border-radius: 12px !important;  
-  border: 1px solid $text-primary;  
+  border: 1px solid $Theme-primary;  
   cursor: default;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
   background-color: transparent !important;
@@ -19,7 +19,7 @@
 
     svg {
       font-size: 28px;
-      color: $text-primary;
+      color: $Theme-primary;
     }
   }
 
@@ -27,8 +27,8 @@
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 12px;
-    color: $text-dark;
-    font-family: $font-primary;
+    color: $Theme-dark;
+    font-family: $FontFamily-primary;
   }
 
   .card-list {
@@ -37,8 +37,8 @@
 
     .card-item {
       font-size: 16px;
-      color: $body-MutedFontColor;
-      font-family: $font-primary;
+      color: $Theme-muted;
+      font-family: $FontFamily-primary;
       margin-bottom: 15px;
       line-height: 1.5;
     }

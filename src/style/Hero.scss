@@ -1,151 +1,116 @@
+
 .hero {
-  height: calc(100vh - 0px);
-  display: flex;
-  align-items: center;
-  color: $text-dark;
+  padding-top: 70px;
+  overflow: hidden;
 
-  @media (max-width: 760px) {
-    height: auto;
+  .hero-title {
+    color: $Theme-dark;
+    font-family: "Playfair Display", serif !important;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1.15;
+    margin: 10px 0;
+
+    @media screen and (max-width: 900px) {
+      font-size: 40px;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 30px;
+    }
   }
 
-  .hero-container {
-    width: 100%;
-  }
+  .hero-subtitle {
+    color: $Theme-primary;
+    font-family: "Playfair Display", serif !important;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    min-height: 55px;
 
-  .hero-left {
-    text-align: left;
+    @media screen and (max-width: 900px) {
+      font-size: 28px;
+      min-height: 40px;
+    }
 
-    @media (max-width: 900px) {
-      text-align: center;
+    @media screen and (max-width: 600px) {
+      font-size: 22px;
+      min-height: 30px;
     }
   }
 
   .hero-label {
     letter-spacing: 2px;
-    color: gray;
+    color: $Theme-muted;
     font-size: 12px;
   }
 
-  .hero-title {
-    font-family: "Playfair Display", serif;
-    font-weight: 600;
-    line-height: 1.2;
-    margin: 12px 0;
-
-    font-size: 55px;
-
-    @media (max-width: 900px) {
-      font-size: 34px;
-    }
-
-    @media (max-width: 600px) {
-      font-size: 28px;
-    }
-  }
-
-  .hero-subtitle {
-    color: #cb5e2f;
-    font-weight: 700;
-    margin-bottom: 12px;
-    font-family: "Playfair Display", serif;
-
-    font-size: 40px;
-
-    @media (max-width: 900px) {
-      font-size: 20px;
-    }
-
-    @media (max-width: 600px) {
-      font-size: 18px;
-    }
-  }
-
   .hero-description {
-    color: #555;
-    max-width: 420px;
-    margin-bottom: 20px;
-
+    color: $Theme-muted;
     font-size: 16px;
+    line-height: 1.7;
+    max-width: 500px;
+    margin-bottom: 24px;
 
-    @media (max-width: 900px) {
+    @media screen and (max-width: 900px) {
       margin-left: auto;
       margin-right: auto;
     }
 
-    @media (max-width: 600px) {
+    @media screen and (max-width: 600px) {
       font-size: 14px;
+      padding: 0 10px;
     }
   }
+}
 
-  .hero-button {
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: -0.2px;
-    transition: all 0.3s ease;
-    width: fit-content;
-    font-family: $font-primary;
-    color: $text-dark;
-  }
 
-  .hero-right {
-    display: flex;
-    justify-content: center;
-  }
-
-  .blob-wrapper {
-    position: relative;
-    margin: auto;
+@media screen and (min-width: 901px) {
+  .hero {
+    min-height: calc(100vh - 70px);
     display: flex;
     align-items: center;
-    justify-content: center;
+  }
+}
+
+.hero-container {
+  align-items: center;
+}
+
+.hero-left {
+  @media screen and (max-width: 900px) {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.hero-button {
+  width: fit-content;
+
+  @media screen and (max-width: 900px) {
+    margin: 0 auto;
+  }
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+.hero-image-wrapper{
+  margin: auto;
+}
+.profile-img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  display: block;
+
+  @media screen and (max-width: 900px) {
+    max-width: 320px;
+    margin: 0 auto;
   }
 
-  /* Blob Shape */
-  .blob {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, #cb5e2f, #cb5e2f);
-    border-radius: 50% 60% 40% 70% / 60% 40% 70% 50%;
-    // animation: blobMove 8s ease-in-out infinite;
-    z-index: 1;
-  }
-
-  /* Profile Image */
-  .profile-img {
-    position: relative;
-    width: 100%;
-    height: calc(100vh - 70px);
-    object-fit: contain;
-    z-index: 2;
-  }
-
-  /* Animation */
-  @keyframes blobMove {
-    0% {
-      border-radius: 50% 60% 40% 70% / 60% 40% 70% 50%;
-    }
-
-    50% {
-      border-radius: 60% 40% 70% 50% / 50% 60% 40% 70%;
-    }
-
-    100% {
-      border-radius: 50% 60% 40% 70% / 60% 40% 70% 50%;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .blob-wrapper {
-      width: 250px;
-      height: 250px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .blob-wrapper {
-      width: 200px;
-      height: 200px;
-    }
+  @media screen and (max-width: 600px) {
+    max-width: 240px;
   }
 }

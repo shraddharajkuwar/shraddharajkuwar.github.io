@@ -3,6 +3,7 @@
     border-top: 1px solid rgba(20, 24, 31, 0.1);
     padding: 48px 16px;
     text-align: center;
+    margin-top: 100px;
   
     &_content {
       max-width: 1200px;
@@ -10,18 +11,18 @@
     }
   
     &_title {
-      font-family: $font-title;
+      font-family: $FontFamily-title;
       font-size: 24px;
       font-weight: 600;
-      color: $text-dark;
+      color: $Theme-dark;
       margin-bottom: 8px;
     }
   
     &_email {
       display: block;
-      font-family: $font-primary;
+      font-family: $FontFamily-primary;
       font-size: 14px;
-      color: $body-MutedFontColor;
+      color: $Theme-muted;
       margin-bottom: 16px;
       text-decoration: none;      
   
@@ -37,7 +38,7 @@
       width: 36px;
       height: 36px;
       border-radius: 4px;
-      background-color:$text-primary;
+      background-color:$Theme-primary;
       color: #ffffff;
       font-weight: 600;
       font-family: var(--font-body);

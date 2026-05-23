@@ -5,7 +5,7 @@
   gap: 0px;
   margin: 0px;
   padding: 40px 0px;
-  background-color: $text-primary;
+  background-color: $Theme-primary;
 }
 
 .slider-container {
@@ -35,7 +35,7 @@
 
 .arrow {
   background: #f9f9f9;
-  color: $text-dark;
+  color: $Theme-dark;
   border: none;
   font-size: 28px;
   cursor: pointer;

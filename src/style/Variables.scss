@@ -1,13 +1,13 @@
 // Color variables
-$primary-color: #e5e2dc;
-$text-dark: #14181f;
 $bg-body: #f7f7f7;
-$text-primary: #cb5e2f;
-$body-MutedFontColor: #4b423e;
+$Theme-primary: #cb5e2f;
+$Theme-muted: #4b423e;
+$Theme-light: #e5e2dc;
+$Theme-dark: #14181f;
 
 // Font
-$font-primary: 'Inter', sans-serif;
-$font-title: "Playfair Display", serif;
+$FontFamily-primary: 'Inter', sans-serif;
+$FontFamily-title: "Playfair Display", serif;
 
 // Spacing
 $spacing-sm: 8px;
@@ -21,8 +21,8 @@ $radius-md: 8px;
 
 
 @mixin section-heading {
-  font-family: $font-title !important;
-  color: $text-dark;
+  font-family: $FontFamily-title !important;
+  color: $Theme-dark;
   font-size: 50px !important;
   font-weight: bold !important;
   line-height: 1.2 !important;
@@ -30,7 +30,7 @@ $radius-md: 8px;
 }
 
 @mixin section-heading-tagline {
-  font-family: $font-primary !important;
+  font-family: $FontFamily-primary !important;
   font-size: 0.75rem !important;
   letter-spacing: 4px !important;
   font-weight: 500 !important;
