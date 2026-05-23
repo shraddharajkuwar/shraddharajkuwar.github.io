@@ -110,7 +110,6 @@ const HeroSection: React.FC = () => {
               </Box>
             </Grid>
 
-            {/* RIGHT IMAGE */}
             <Grid
               size={{ xs: 12, md: 5 }}
               sx={{
