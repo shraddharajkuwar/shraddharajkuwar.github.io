@@ -1,13 +1,13 @@
 .case-studies {
   padding: 0px 20px;
   scroll-margin-top: 120px;
-  margin-bottom: 40px;  
+  margin-bottom: 40px;
 
   .container {
     max-width: 1200px;
     margin: 0 auto;
   }
-
+  
   .case-studies-grid {
     margin-bottom: 20px;
   }
@@ -29,52 +29,39 @@
   .card {
     cursor: pointer;
     border-radius: 12px;
-    border: 1px solid $Theme-primary;
-    background-color: #F5F2EE;
     overflow: hidden;
     transition: transform 0.3s ease;
-    padding: 20px 0px 20px 40px;
-    min-height: 650px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    padding: 40px;
+    background: rgb(255 255 255 / 40%);
+    backdrop-filter: blur(12px);
 
     &:hover {
-     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
     }
   }
 
   .card-image {
-    position: relative;
-    width: 100%;
-    height: 440px;
-    overflow: hidden;
-
     img {
       width: 100%;
-      height: 100%;
-      object-fit: contain;
-      display: block;     
+      height: 300px;
+      object-fit: cover;
     }
 
   }
 
   .card-content {
     h6 {
-      font-size: 18px;
+      font-size: 20px;
       color: $Theme-dark;
       margin-bottom: 10px;
       margin-top: 20px;
       font-weight: 500 !important;
     }
 
-    span {
-      font-size: 16px;
-      color: $Theme-muted;
-      line-height: 1.6;
-      margin-bottom: 15px;
+    .Card-link {
+      margin-top: 30px;
     }
+
   }
 
   .tags {
@@ -89,5 +76,14 @@
     background: #efedea;
     border-radius: 20px;
     color: $Theme-muted;
+  }
+}
+
+.list-items {
+  li {
+    margin-bottom: 10px;
+    color: $Theme-muted;
+    font-size: 16px;
+    line-height: 1.7;
   }
 }

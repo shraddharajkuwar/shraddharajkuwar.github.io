@@ -1,20 +1,9 @@
 import { Grid, Chip } from "@mui/material";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import InfoCard from "../components/InfoCard.tsx";
-import SearchIcon from "@mui/icons-material/Search";
-import PeopleIcon from "@mui/icons-material/People";
-import InsightsIcon from "@mui/icons-material/Insights";
 import SectionHeading from "../components/SectionHeading.tsx";
 import ImageSlider from "../components/ImageSlider.tsx";
 
-const problemStatement = [
-  "Fragmented experience across multiple AI tools",
-  "Time lost due to constant context switching",
-  "Difficulty managing long conversations and previous chats",
-  "Complex interfaces increase cognitive load for enterprise users",
-
-];
 const FeatureList = [
 
   "Design System Consistency",
@@ -31,41 +20,24 @@ const slides = [
   "/images/MultiBot AI/GenAI Chat page-Multifile Upload.png",
   "/images/MultiBot AI/History.png",
 ];
-const results = [
-  "Reduced dependency on multiple AI platforms",
-  "Improved workflow efficiency for enterprise users",
-  "Better readability and navigation experience",
-  "Created a scalable and reusable AI interface system",
-];
 
 const MultiChatAI = () => {
   const navigate = useNavigate();
   return (
     <div className="Project-detail section-top-margin">
-      <div className="container">
+      <div className="container overviewsection">
 
-        <a
-          className="back-link"
-          rel="noreferrer"
-          onClick={() => navigate("/")}
-        >
-          <span>← Back</span>
-        </a>
-
-        <div className="tags">
+       <div className="Casestudy-header">
+         <div className="tags">
 
           <span>Conversational AI</span>
           <span>Enterprise Application</span>
         </div>
 
 
-        <h1 className="title">MultiChat Conversational AI Platform</h1>
-        <p className="subtitle">Unified AI Platform for Enterprise Users</p>
+        <h1 className="title">A unified workspace for every model an enterprise team uses.</h1>
 
-
-        <div className="hero-image">
-          <img src="/images/MultiBot AI/MutltiChat-hero.png" alt="Hero Image" className="Project-hero-img" />
-        </div>
+       </div>
 
         <div>
           <div className="section section-top-margin overviewsection">
@@ -76,6 +48,7 @@ const MultiChatAI = () => {
 
             />
             <p>
+              Built for teams that need governance, comparison, and speed without the tab chaos.
               MultiChat Bot AI is an enterprise chatbot platform designed to bring multiple AI assistants into one unified experience. The platform allows users to access different bots such as GenAI, HR, Legal, and Data Chat from a single interface, helping teams complete tasks faster without switching between multiple tools.
 
               The goal of the project was to create a simple, scalable, and user-friendly AI experience for enterprise users with different technical backgrounds.
@@ -99,44 +72,47 @@ const MultiChatAI = () => {
               highlightText="research"
 
             />
-            <Grid container spacing={2} className="research-grid">
-              <Grid size={{ xs: 12, md: 4 }}>
-                <InfoCard
-                  title="Research Methods"
-                  icon={<SearchIcon color="primary" />}
-                  items={[
-                    "User flow analysis",
-                    "Competitive analysis of existing AI chat platforms",
-                    "Stakeholder discussions",
-                    "Observing common enterprise workflows",
-                    "UX pattern research for conversational interfaces",
-                  ]}
-                />
-              </Grid>
-              <Grid size={{ xs: 12, md: 4 }}>
-                <InfoCard
-                  title="Target Users"
-                  icon={<PeopleIcon color="primary" />}
-                  items={[
-                    "Employees using AI tools for daily productivity",
-                    "Non-technical users needing quick assistance",
-                    "Technical users working with data or SQL queries",
-                    "Teams requiring HR or legal support through AI assistants",
-                  ]}
-                />
-              </Grid>
+            <Grid container spacing={2}>
+              <Grid size={{ xs: 12, md: 5 }} >
+                <div className="research-card card-1">
+                  <div className="tape"></div>
 
-              <Grid size={{ xs: 12, md: 4 }}>
-                <InfoCard
-                  title="Key Insights"
-                  icon={<InsightsIcon color="primary" />}
-                  items={[
-                    "Users frequently switch between multiple tools for different tasks",
-                    "Many users feel confused when starting a conversation with AI",
-                    "Users prefer simple and familiar chat experiences",
-                    "Gamification boosts engagement",
-                  ]}
-                />
+                  <h3 className="research-card-title">Research Methods</h3>
+
+                  <ul>
+                    <li>User flow analysis</li>
+                    <li>Competitive analysis of existing AI chat platforms</li>
+                    <li>Stakeholder discussions</li>
+                    <li>Observing common enterprise workflows</li>
+                    <li>UX pattern research for conversational interfaces</li>
+                  </ul>
+                </div>
+              </Grid>
+              <Grid size={{ xs: 12, md: 7 }} className="card-2-grid">
+                <div className="research-card card-2">
+                  <div className="tape"></div>
+
+                  <h3 className="research-card-title">Target Users</h3>
+
+                  <ul>
+                    <li>Employees using AI tools for daily productivity</li>
+                    <li>Non-technical users needing quick assistance</li>
+                    <li>Technical users working with data or SQL queries</li>
+                    <li>Teams requiring HR or legal support through AI assistants</li>
+                  </ul>
+                </div>
+                <div className="research-card card-3">
+                  <div className="tape"></div>
+
+                  <h3 className="research-card-title">Key Insights</h3>
+
+                  <ul>
+                    <li>Users frequently switch between multiple tools</li>
+                    <li>Many users feel confused when starting conversations</li>
+                    <li>Users prefer simple and familiar chat experiences</li>
+                    <li>Gamification boosts engagement</li>
+                  </ul>
+                </div>
               </Grid>
             </Grid>
 
@@ -145,7 +121,7 @@ const MultiChatAI = () => {
             <SectionHeading
               tagline="The Problem"
               restText="The "
-              highlightText="key challenges"
+              highlightText="challenges"
 
             />
             <p>
@@ -154,17 +130,12 @@ const MultiChatAI = () => {
               There was a need for a single, seamless platform to access all AI capabilities.
             </p>
             <section className="section key-results">
-              <div className="results-grid">
-                {problemStatement.map((item, index) => (
-                  <div
-                    key={index}
-                    className="result-card"
-                    tabIndex={0}
-                  >
-                    {item}
-                  </div>
-                ))}
-              </div>
+              <ul className="list-items">
+                <li>Fragmented experience across multiple AI tools</li>
+                <li>Time lost due to constant context switching</li>
+                <li>Difficulty managing long conversations and previous chats</li>
+                <li>Complex interfaces increase cognitive load for enterprise users</li>
+              </ul>
             </section>
           </div>
         </div>
@@ -197,7 +168,7 @@ const MultiChatAI = () => {
 
       </div>
 
-      <div className="ProjectDetail-imgGrid">
+      <div className="ProjectDetail-imgGrid-desktop">
 
         <section>
 
@@ -212,18 +183,14 @@ const MultiChatAI = () => {
             highlightText="outcomes"
 
           />
-          <div className="results-grid">
-            {results.map((item, index) => (
-              <div
-                key={index}
-                className="result-card"
-                tabIndex={0}
-              >
-                {item}
-              </div>
-            ))}
-          </div>
-
+          <section className="section key-results">
+            <ul className="list-items">
+              <li>Reduced dependency on multiple AI platforms</li>
+              <li>Improved user experience with a unified interface</li>
+              <li>Increased productivity by streamlining workflows</li>
+              <li>Enhanced collaboration across different departments</li>
+            </ul>
+          </section>
           <div className="divider" />
           <div className="case-navigation">
             <button onClick={() => navigate("/YardMap")}>

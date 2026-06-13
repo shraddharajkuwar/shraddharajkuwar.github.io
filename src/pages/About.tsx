@@ -29,17 +29,23 @@ const About: React.FC = () => {
     <Box component="section" className="about">
       <Container maxWidth="md" className="about-herosection section-top-margin">
         <Grid container className="about_container">
-          <Grid size={{ xs: 12 }} className="about_content">
-              <SectionHeading
+          <Grid size={{ md: 6, xs: 12 }} className="about_content">
+            <SectionHeading
               tagline="ABOUT"
               restText=" A bit "
               highlightText="about me"
-
-            />                 
+            />
 
             <Typography className="about_Info">
               I’m Shraddha Rajkuwar, a human-centered UI/UX designer and developer with 7+ years of experience crafting digital products that people genuinely enjoy using. I believe great design is invisible, it gets out of the way and lets people accomplish their goals with ease. <br /> I’ve worked across enterprise applications, chatbot platforms, e-learning systems, and admin dashboards, helping teams simplify complex workflows and elevate user experience through strong design thinking and clean frontend execution.
             </Typography>
+          </Grid>
+          <Grid size={{ md: 6, xs: 12 }} className="about_content">
+            <img
+                  src="/images/AboutMe.png"
+                  alt="profile"
+                  className="profile-img"
+                />
           </Grid>
         </Grid>
 

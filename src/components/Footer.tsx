@@ -1,7 +1,9 @@
+import { Container } from "@mui/material";
 import React from "react";
 const Footer: React.FC = () => {
   return (
-    <footer className="footer">
+    <Container maxWidth="md">
+       <footer className="footer container">
       <div className="footer_content">
         <h3 className="footer_title">Let’s connect</h3>
 
@@ -23,6 +25,8 @@ const Footer: React.FC = () => {
         </a>
       </div>
     </footer>
+    </Container>
+   
   );
 };
 

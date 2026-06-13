@@ -15,7 +15,7 @@ export const projects: Project[] = [
     subtitle: "",
     description: "Unified AI Platform for Enterprise Users.",
     tags: ["AI/ML", "SaaS"],
-    image:  "/images/MultiBot AI/GenAI landing page.png",
+    image:  "/images/MultiBot AI/MutltiChat-hero.png",
   },
   // {
   //   title: "Fitness App Redesign",
@@ -31,6 +31,6 @@ export const projects: Project[] = [
     subtitle: "",
     description: "Interactive Learning Platform for Children",
     tags: ["Education", "Web App"],
-    image:  "/images/Rif/1.1.png",
+    image:  "/images/Rif/hero.png",
   },
 ];

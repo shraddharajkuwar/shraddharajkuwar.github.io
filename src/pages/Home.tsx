@@ -3,6 +3,7 @@ import { Box, Typography, Container } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import CaseStudies from "../components/CaseStudies.tsx";
 import LinkButton from "../components/LinkButton.tsx";
+import { useLocation } from "react-router-dom";
 
 const HeroSection: React.FC = () => {
   const roles = [
@@ -56,85 +57,64 @@ const HeroSection: React.FC = () => {
 
     return () => clearTimeout(timer);
   }, [text, isDeleting, roleIndex]);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === "#case-studies") {
+      const element = document.getElementById("case-studies");
+
+      setTimeout(() => {
+        element?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }, 100);
+    }
+  }, [location]);
 
   return (
     <Box>
       <div className="hero">
-        <Container maxWidth="lg" disableGutters>
+        <Container maxWidth="md" disableGutters>
           <Grid
             container
             spacing={4}
             alignItems="center"
             className="hero-container"
           >
-            {/* LEFT CONTENT */}
-            <Grid size={{ xs: 12, md: 7 }}>
+            <Grid size={{ xs: 12, md: 10 }}>
               <Box className="hero-left">
-                <Typography className="hero-label">
-                  HELLO
+                <Typography className="hero-title" component="h1">
+                  Turning <span className="strike-word">complexity</span> into{" "}
+                  <span className="highlight-word">clarity</span>
                 </Typography>
-
-                <Typography
-                  className="hero-title"
-                  component="h1"
-                >
-                  I’m Shraddha Rajkuwar
-                </Typography>
-
-                <Typography
-                  className="hero-subtitle"
-                  component="h2"
-                >
-                  {text}
-
-                  <Box
-                    component="span"
-                    sx={{
-                      ml: "4px",
-                      animation: "blink 1s infinite",
-                    }}
-                  >
-                    |
-                  </Box>
-                </Typography>
-
                 <Typography className="hero-description">
-                  I craft modern, accessible interfaces that combine thoughtful user experience with clean frontend execution.
+                  I'm Shraddha Rajkuwar - Bringing digital products to life with thoughtful experience and clean frontend execution.
                 </Typography>
 
                 <LinkButton
-                  text="View work"
+                  text="View selected work"
                   onClick={handleScroll}
                   link="#case-studies"
                 />
               </Box>
             </Grid>
-
-            <Grid
-              size={{ xs: 12, md: 5 }}
-              sx={{
-                display: "flex",
-                alignItems: "flex-end",                
-              }}
-            >
-              <Box className="hero-image-wrapper">
-                <img
-                  src="/images/ShraddhaImg2.png"
-                  alt="profile"
-                  className="profile-img"
-                />
-              </Box>
+            <Grid size={{ xs: 12 }}>
+              <div
+                ref={caseStudiesRef}
+                className="case-studies-wrapper"
+              >
+                <CaseStudies />
+              </div>
             </Grid>
           </Grid>
         </Container>
       </div>
+      <Container maxWidth="md">
 
-      <div
-        ref={caseStudiesRef}
-        className="case-studies-wrapper"
-      >
-        <CaseStudies />
-      </div>
+
+      </Container>
+
     </Box>
   );
 };

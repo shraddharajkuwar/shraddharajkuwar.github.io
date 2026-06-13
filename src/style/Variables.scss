@@ -1,14 +1,14 @@
 // Color variables
-$bg-body: #f7f7f7;
+// $bg-body: #110c08;
+$bg-body: #f3f0eb;
 $Theme-primary: #cb5e2f;
-$Theme-muted: #4b423e;
+$Theme-muted: #323130;
 $Theme-light: #e5e2dc;
 $Theme-dark: #14181f;
-
 // Font
 $FontFamily-primary: 'Inter', sans-serif;
 $FontFamily-title: "Playfair Display", serif;
-
+$body-font-size: 16px;
 // Spacing
 $spacing-sm: 8px;
 $spacing-md: 16px;
@@ -16,9 +16,9 @@ $spacing-lg: 32px;
 $section-top-margin: 30px;
 
 // Border radius
+$Theme-border:rgb(244 123 58 / 52%);  
 $radius-sm: 4px;
 $radius-md: 8px;
-
 
 @mixin section-heading {
   font-family: $FontFamily-title !important;

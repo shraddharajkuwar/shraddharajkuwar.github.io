@@ -43,14 +43,14 @@
   .about_skill {
     border-radius: 12px;
     padding: 8px 20px;
+    color: $Theme-muted;
     font-size: 16px;
     min-height: 40px;
     display: flex;
-    align-items: center;
-    color: #4b423e;
+    align-items: center;    
     line-height: 1.6;
     font-family: "Inter", sans-serif;
-    border: 1px solid #cb5e2f;
+    border: 1px solid $Theme-primary;
     cursor: default;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
 
